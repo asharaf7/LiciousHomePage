@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.categories {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.categories-bio {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #696969;
+}
+
+.image {
+    height: 110px;
+    width: 100px;
+    border-radius: 40px;
+}
+
+.image-two {
+    height: 90px;
+    width: 90px;
+    border-radius: 40px;
+}
+
+.item-name {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: black;
+}
+
+.percent-image {
+    font-size: 100px;
+    border-radius: 40px;
+    color: red;
+    height: 30px;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+.licious-promise {
+    font-family: "Roboto";
+    font-size: 35px;
+    color: grey;
+    font-weight: bold;
+}
+
+.licious {
+    font-family: "ceveat";
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+}
+
+.licious-promise-bottom {
+    font-family: "Roboto";
+    font-size: 23px;
+    color: grey;
+}
+
+.licious-bottom {
+    font-family: "ceveat";
+    font-size: 25px;
+    color: red;
+}
+
+.licious-charge {
+    font-family: "Roboto";
+    color: grey;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.what-you-buy {
+    font-family: "ceveat";
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+}
+
+.charge-description {
+    font-family: "Roboto";
+    color: grey;
+    font-size: 18px;
+}
+
+.category-image {
+    height: 180px;
+    width: 180px;
+    border-radius: 40px;
+}
+
+.category-percentage {
+    font-size: 140px;
+    border-radius: 40px;
+    color: red;
+    height: 70px;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+.tap-to-view {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.single-tick-mark {
+    color: red;
+    padding-left: 10px;
+}
+
+.chicken-bg-container {
+    background-color: #dcdcdc;
+    border-radius: 12px;
+}
+
+.category-heading {
+    font-family: "Roboto";
+    font-size: 21px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.category-description {
+    font-family: "Roboto";
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.category-price {
+    font-family: "Roboto";
+    font-size: 22px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.delivery-image {
+    color: red;
+}
+
+.item-image {
+    margin-top: 40px;
+}
+
+.category-timing {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: grey;
+}
+
+.category-timings {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: grey;
+    font-weight: bold;
+}
+
+.timings-bold {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.buy-now {
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.button-middle {
+    text-align: center;
+}

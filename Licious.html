@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d7ffd399c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="d-flex flex-row">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill danger" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+        </svg>
+        <p class="pl-2">Vijayawada</p>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661580983/th_9_zcc1zp.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661581031/th_11_sizer6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661581074/th_10_ycfzdr.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <h1 class="categories pt-3 ml-3">Shop by categories</h1>
+    <p class="categories-bio ml-3">Freshest meats just for you</p>
+
+    <div class="container" id="categorySection">
+        <div class="row">
+            <div class="col-3 mt-4 text-center" id="chickenSection">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661581941/th_12_q5sakl.jpg" class="image" onclick="display('chickencategorySection')" />
+                <h1 class="item-name">Chicken</h1>
+                <button class="btn btn-primary mt-2" onclick="openChickenPage()">View Chicken Products</button>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <i class="fa-solid fa-percent percent-image"></i>
+                <h1 class="item-name mt-3">Today's Deals</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661583673/Fish_kptdl7.jpg" class="image" />
+                <h1 class="item-name">Fish & sea food</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661583982/motton_owzjuc.jpg" class="image" />
+                <h1 class="item-name">Mutton</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_474,w_474/v1661584279/Ready_to_cook_onr9vt.jpg" class="image" />
+                <h1 class="item-name">Ready to cook</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_500,w_500/v1661584674/prawns_xdg5xf.jpg" class="image" />
+                <h1 class="item-name">Prawns</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661585088/cold_cuts_g4halp.jpg" class="image" />
+                <h1 class="item-name">Cold cuts</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_474,w_474/v1661585200/spreads_ucsspl.jpg" class="image" />
+                <h1 class="item-name">Spreads</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661585366/eggs_k9rqr7.jpg" class="image" />
+                <h1 class="item-name">Eggs</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661585475/Biryani_vyvhbh.jpg" class="image" />
+                <h1 class="item-name">Biryani</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661585602/Combos_bz2cu9.jpg" class="image" />
+                <h1 class="item-name">Combos</h1>
+            </div>
+
+            <div class="col-3 mt-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_474,w_474/v1661585200/spreads_ucsspl.jpg" class="image" />
+                <h1 class="item-name">Spreads</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="licious-promise mt-5 text-center">The Licious <span class="licious">Promise</span></h1>
+            </div>
+
+            <div class="col-12 text-center pt-3">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661614742/Licious_Home_ldb9fs.jpg" />
+            </div>
+
+            <div class="col-12 text-center">
+                <h1 class="licious-promise-bottom">we will sell only the meat that<span class="licious-bottom"> we would eat ourselves</span></h1>
+                <p class="licious-promise-bottom">For meat to stay fresh and retain its natural juices, it needs to be stored at a temperature between 0 to 5 celcius.We maintain this temperature from the time we procure the product to cleaning, cutting and storing it, until it leaves for delivery. And even when its out for delivery, we keep it chilled right up to your doorstep. </p>
+            </div>
+
+            <div class="col-4 pt-5">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,w_150/v1661670530/Home_image_lx1c2o.jpg" />
+            </div>
+
+            <div class="col-8 pt-5">
+                <h1 class="licious-charge">we will charge for <span class="what-you-buy">what you buy</span></h1>
+                <p class="charge-description">Doesn't everyone do this? Not really .Most other places first weigh the meat, then cut up the pieces, and throw out the parts which aren't fit to eat, such as offal, gizzard, wingtips, etc. But you still pay based on the original weight even though what you finally get is 10% to 30% less.</p>
+            </div>
+
+            <div class="col-8 pt-5">
+                <h1 class="licious-charge"> If it's not fresh, <span class="what-you-buy">we won't sell you</span></h1>
+                <p class="charge-description">For meat to stay fresh and retain its natural juices, it needs to be stored at a temperature between 0 to 45 Degrees. we maintain this temperature from the time we procure the product to cleaning, cutting, and storing it</p>
+            </div>
+
+            <div class="col-4 pt-5">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_150,w_150/v1661672187/Fish_image_vyyw8m.jpg" />
+            </div>
+
+            <div class="col-12">
+                <h1 class="categories pt-3 ml-3">Explore by category</h1>
+            </div>
+
+            <div class="col-4 mt-5 text-center">
+                <i class="fa-solid fa-percent percent-image"></i>
+                <h1 class="item-name mt-3">Today's Deals</h1>
+            </div>
+
+            <div class="col-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,w_400/v1661581941/th_12_q5sakl.jpg" class="category-image" />
+                <h1 class="item-name">Chicken</h1>
+            </div>
+
+            <div class="col-4 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661583673/Fish_kptdl7.jpg" class="category-image" />
+                <h1 class="item-name">Fish & sea food</h1>
+            </div>
+
+            <div class="col-4 mt-5 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_474,w_474/v1661584279/Ready_to_cook_onr9vt.jpg" class="category-image" />
+                <h1 class="item-name">Ready to cook</h1>
+            </div>
+
+            <div class="col-4 mt-5 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661583982/motton_owzjuc.jpg" class="category-image" />
+                <h1 class="item-name">Motton</h1>
+            </div>
+
+            <div class="col-4 mt-5 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_500,w_500/v1661584674/prawns_xdg5xf.jpg" class="category-image" />
+                <h1 class="item-name">Prawns</h1>
+            </div>
+
+            <div class="col-4 mt-5 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661585088/cold_cuts_g4halp.jpg" class="category-image" />
+                <h1 class="item-name">Cold cuts</h1>
+            </div>
+
+            <div class="col-4 mt-5 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_474,w_474/v1661585200/spreads_ucsspl.jpg" class="category-image" />
+                <h1 class="item-name">Spreads</h1>
+            </div>
+
+            <div class="col-4 mt-5 text-center">
+                <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/v1661585366/eggs_k9rqr7.jpg" class="category-image" />
+                <h1 class="item-name">Eggs</h1>
+            </div>
+
+            <div class="col-12">
+                <h1 class="categories">My Rewards</h1>
+                <p class="categories-bio">Place an order and win your next reward !</p>
+                <a href="" class="tap-to-view">TAP TO VIEW</a>
+            </div>
+
+            <div class="col-12 text-center pt-5">
+                <h1 class="what-you-buy">Every Licious box contains box contains meat that's:</h1>
+
+                <div class="d-flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check2 single-tick-mark" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    <h1 class="charge-description pt-2 ml-2">Vaccum sealed & maintained between 0-4 C</h1>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check2 single-tick-mark" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    <h1 class="charge-description pt-2 ml-2">Fresh , pre-cut and pre-cleaned</h1>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check2 single-tick-mark" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    <h1 class="charge-description pt-2 ml-2">Certified with over 150 rigorous quality checks</h1>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check2 single-tick-mark" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    <h1 class="charge-description pt-2 ml-2">Free from artificial preservatives & antibiotic residue</h1>
+                </div>
+
+                <div class="pt-5">
+                    <img src="https://res.cloudinary.com/dhsbfvjsl/image/upload/c_scale,h_200,w_450/v1661777762/Boxes_qzxkxv.jpg" />
+                </div>
+            </div>
+
+            <div class="col-12 text-center pt-5 pb-5">
+                <p class="category-homepage-bottom">Didn't find what you're looking for ? Try from our wide range of</p> <a href="#categorySection">categories !</a>
+            </div>
+        </div>
+    </div>
